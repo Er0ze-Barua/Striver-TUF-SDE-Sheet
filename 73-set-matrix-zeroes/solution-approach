@@ -1,0 +1,17 @@
+## Approach
+First idea was to directly set rows and columns to zero when I see a 0,
+but that would mess up future cells and would lead to all the elements of the matrix being 0, which would lead to wrong answer.
+
+So instead I worked upon this idea - 
+- initialize two arrays to mark the positions of the 0 elements in the matrix
+- utilized two for loops
+- first for loop to mark the 0 element's positions
+- second for loop to make the corressponding elements 0
+
+
+## Complexity
+- Time: O(n * m)
+- Space: O(n + m)
+
+## Note
+This can be optimized to O(1) space by using the first row and column as markers.

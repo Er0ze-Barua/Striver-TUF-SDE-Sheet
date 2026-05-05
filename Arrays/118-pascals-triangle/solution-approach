@@ -1,0 +1,12 @@
+## Approach
+-First initialize an empty 2d vector as the answer vector
+-then start a for loop, from 0 till number of rows (i-index)
+-for each instance of the previous for loop, initiate an empty 1d vector
+-now initiate a neted for loop that starts from 0 till the current row number (j-index)
+-inside the current nested loop, add the previous row's current element([i-1][j]) and the previous row's previous element ([i-1][j-1])
+-after exiting the nested loop, push the 1d vector to the ans vector
+-at last return the 2d vector as the ans
+
+## Complexity
+- Time: O(n**2)
+- Space: O(n**2)
